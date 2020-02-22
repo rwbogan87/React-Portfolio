@@ -1,0 +1,10 @@
+.headermain {
+    background-image: url('../../Assets/great.jpeg.jpg');
+    background-repeat: no repeat;
+    background-position: center;
+    background-size: cover;
+    height: 20vh;
+    width: 15vw;
+    box-shadow: 5px 5px 7px 9px rgb(71, 71, 71);
+    display: inline-block;
+}
