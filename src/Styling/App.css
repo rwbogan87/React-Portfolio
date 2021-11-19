@@ -1,5 +1,11 @@
 .App {
   text-align: center;
+  background-image: url('../Assets/blueBackground.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  height: 100vh;
 }
 
 .App-header {
