@@ -2,7 +2,6 @@ import '../../Styling/NavBar.css'
 import { Link } from 'react-router-dom'
 
 function NavBar({routes}) {
-  console.log(routes)
     return (
       <div className="NavBar">
         <nav className="routes-container">

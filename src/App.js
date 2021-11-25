@@ -1,17 +1,34 @@
 import { BrowserRouter as Switch, Routes, Route } from 'react-router-dom';
 import './Styling/App.css';
+
 import Header from './Components/Layout/Header'
-import {ResumeComponent, ResumeString} from './Components/Resume'
 import NavBar from './Components/Layout/NavBar'
-
-import Projects from './Components/Project/projectView'
-
-
 import Footer from './Components/Layout/Footer'
 
+import { ResumeComponent, ResumeString } from './Components/Resume'
+import { ProjectComponent, ProjectString } from './Components/Project/projectView'
+
+
 function App() {
-  const routes = [ResumeString, 'Projects']
-  const components = [<ResumeComponent />, <Projects />]
+
+  const components = [
+    <ResumeComponent />,
+    <ProjectComponent />
+  ]
+  const routes = [
+    ResumeString,
+    ProjectString
+  ]
+
+  function Routing(i) {
+    return (
+      routes.map((i, index) => {
+        return (
+          <Route path={`/${i}`} element={components[index]} key={index}/>
+        )
+      })
+    )
+  }
 
   return (
     <div className="App">
@@ -20,18 +37,10 @@ function App() {
       <Switch>
         <NavBar routes={routes} />
         <Routes>
-          
-          {routes.map((i, index) => {
-            console.log(i)
-            return (
-              <Route path={`/${i}`} element={components[index]} />
-            )
-          })}
-          {/* <Route path="/Resume" element={<Resume />} />
-          <Route path="/Projects" element={<Projects />} /> */}
+          {Routing(routes)}
         </Routes>
       </Switch>
-
+      
       <Footer />
     </div>
   );

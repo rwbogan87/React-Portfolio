@@ -4,18 +4,18 @@ const countapi = require('countapi-js');
 function PageCount() {
     const [visitCount, setVisitCount] = useState(0)
 
-    let counter = () => {
-        //! update with namespace details after deployment
-        countapi.event('global').then((result) => {
-            let myCount=result.value - 58600
-            console.log(myCount)
-            setVisitCount(myCount)
-        })
-    }
 
-    useEffect(()=> {
-        counter()
-    },[])
+    //? build database to manage page visits on load
+    // let counter = () => {
+    //     countapi.event('global').then((result) => {
+    //         let myCount=result.value - 58600
+    //         setVisitCount(myCount)
+    //     })
+    // }
+
+    // useEffect(()=> {
+    //     counter()
+    // },[])
 
 
     return (

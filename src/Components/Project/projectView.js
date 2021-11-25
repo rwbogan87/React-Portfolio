@@ -1,9 +1,11 @@
 import Project from './project'
 
-function ProjectView() {
+const ProjectString = 'Projects'
+
+function ProjectComponent() {
     return (
-      <div className="ProjectView">
-        ProjectView
+      <div className="ProjectComponent">
+        {ProjectString}
         <Project />
         <Project />
         <Project />
@@ -11,5 +13,5 @@ function ProjectView() {
     );
   }
   
-  export default ProjectView;
+  export {ProjectComponent, ProjectString};
   
