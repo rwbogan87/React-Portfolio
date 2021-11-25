@@ -2,13 +2,16 @@ import pdfResume from '../Assets/RyanBoganResume.pdf'
 
 import '../Styling/Resume.css'
 
-function Resume() {
+const ResumeString = 'Resume'
+
+function ResumeComponent() {
     return (
       <div className="Resume">
-        <iframe src={pdfResume} className="pdf"></iframe>
+        <h1>{ResumeString}</h1>
+        {/* <iframe src={pdfResume} className="pdf">resume</iframe> */}
       </div>
     );
   }
   
-  export default Resume;
+  export {ResumeComponent, ResumeString};
   

@@ -7,7 +7,7 @@ function PageCount() {
     let counter = () => {
         //! update with namespace details after deployment
         countapi.event('global').then((result) => {
-            let myCount=result.value - 56600
+            let myCount=result.value - 58600
             console.log(myCount)
             setVisitCount(myCount)
         })
