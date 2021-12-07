@@ -1,5 +1,9 @@
-
 .pdf {
-    height: 300px;
-    width: 500px;
+    width: 80%;
+    padding: 10px;
+    height: 100vh;
+}
+
+.Resume {
+    height: 100vh;
 }

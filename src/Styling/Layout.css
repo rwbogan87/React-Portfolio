@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Oswald:wght@500&display=swap');
+
+
+
+/* * Footer */
+.Footer {
+    height: 5vh;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+/* *Header */
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bec7d8ff;
+    height: 20vh auto;
+    color: black;
+    flex-direction: column;
+    text-shadow: 1px 1px 1px #524e42ff;
+    border: 1px solid #524e42ff;
+}
+
+#_headerText {
+    font-size: 6vw;
+}
+
+._titleFont {
+    font-family: 'Oswald', sans-serif;
+    box-sizing: border-box;
+}
+
+._textFont {
+    font-family: 'Lora', serif;
+    box-sizing: content-box;
+}
