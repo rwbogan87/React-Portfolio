@@ -20,24 +20,34 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #bec7d8ff;
-    height: 20vh auto;
+    height: 10vh auto;
     color: black;
     flex-direction: column;
     text-shadow: 1px 1px 1px #524e42ff;
-    border: 1px solid #524e42ff;
+    padding-top: 20px;
+    background: rgba(200, 202, 204, 0.8);
 }
 
 #_headerText {
-    font-size: 6vw;
+    font-size: 8vw;
+
 }
 
 ._titleFont {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Lora', serif;
     box-sizing: border-box;
 }
 
 ._textFont {
     font-family: 'Lora', serif;
     box-sizing: content-box;
+    font-size: 4vw;
+}
+
+.AboutComponent {
+    background: rgba(50, 54, 57, 0.8);
+    margin-bottom: 20vh;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }

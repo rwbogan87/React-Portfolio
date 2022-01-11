@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Oswald:wght@500&display=swap');
+p {
+    font-family: 'Lora', serif;
+}
+img {
+    width: 10vw;
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10vh;
+}
+
+img:hover {
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.ProjectComponent {
+    display: flex;
+    flex-direction: column;
+    background: rgba(50, 54, 57, 0.8);
+    margin-bottom: 20vh;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+.badgeDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.badgeTitleDiv {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    font-size: 2vw;
+}
+#toolTip {
+    font-size: 1vw;
+}
+
+#toolTip:hover {
+    cursor: pointer;
+}

@@ -12,23 +12,26 @@ html {
 }
 
 .App {
-  overflow: auto;
   width: 100vw;
   color: white;
-  position: absolute;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   left: 50%;
-  transform: translate(-50%, -50%);
   text-align: center;
+  height: auto;
+
 }
 
 .App-bg {
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
-  background-image: url('../Assets/heawaii_beach1.jpg');
+  background-image: url('../Assets/laptop.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  overflow: auto;
 
 }

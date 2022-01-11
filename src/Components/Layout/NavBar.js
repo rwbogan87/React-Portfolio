@@ -1,5 +1,6 @@
-import '../../Styling/Layout.css'
+import '../../Styling/NavBar.css'
 import { Link } from 'react-router-dom'
+import { BreadcrumbItem } from 'reactstrap'
 
 function NavBar({routes}) {
     return (
@@ -7,7 +8,7 @@ function NavBar({routes}) {
         <nav className="routes-container">
           {routes.map((route) => {
             return (
-              <Link to={route} key={route} className="routes-link">{route}</Link>
+              <BreadcrumbItem tag={Link} to={route} key={route} className="routes-link">{route}</BreadcrumbItem>
             )
           })}
         </nav>

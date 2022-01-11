@@ -1,24 +1,34 @@
-import pdfResume from '../Assets/RyanBoganResume.pdf'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
+import pdfResume from '../Assets/RyanBoganResume.pdf';
+import { Button } from 'reactstrap';
 import '../Styling/Resume.css'
 
 const ResumeString = 'Resume'
 
 function ResumeComponent() {
-  const [modalState, setModalState] = useState('none')
+  const [modalState, setModalState] = useState(false)
   let modal = document.getElementById('pdfModal');
-
+  
   const displayMe = () => {
-    setModalState('block')
+    console.log('displayMe() ran')
+    setModalState(!modalState)
+  }
 
-    if (modal) {
-      console.log('modal')
+  const modalHandler = () => {
+    if (modalState == true && modal !== null) {
+      modal.style.display = 'block'
+    } else if (modal !== null) {
+      modal.style.display = 'none'
     } else {
-
-      console.log('no modal')
+      return null
     }
   }
+
+  useEffect(()=> {
+    console.log('useEffect ran')
+    modalHandler()
+  },[modalState])
 
   window.onclick = function (event) {
     if (event.target == modal) {
@@ -27,18 +37,19 @@ function ResumeComponent() {
   }
 
   return (
-    <div className="Resume">
-      <button id="_openButton" onClick={displayMe}>Preview PDF</button>
-      <h1>{ResumeString}</h1>
+    <>
+      <Button color="primary" id="_openButton" onClick={displayMe}>Preview PDF</Button>
+    <div className="Resume centered">
       <div id="pdfModal" style={{
-        height: '100vh',
-        display: modalState,
-        left: 0,
+        display: 'none',
       }}>
-        <span className="close">&times;</span>
         <iframe src={pdfResume} className="pdf">resume</iframe>
+        <br/>
+        <Button outline color="warning" id="_closeButton" onClick={displayMe}>Close</Button>
       </div>
     </div>
+    </>
+
   );
 }
 

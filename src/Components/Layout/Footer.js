@@ -1,6 +1,5 @@
 import '../../Styling/Layout.css'
 
-import PageCount from '../Pagecount';
 
 function Footer() {
   return (

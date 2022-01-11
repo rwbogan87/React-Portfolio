@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Oswald:wght@500&display=swap');
+
+.routes-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.routes-link {
+    font-family: 'Lora', serif;
+    background: rgba(50, 54, 57, 0.8);
+    color: white;
+
+    width: 100vw;
+    text-decoration: none;
+    padding: 0px;
+    font-size: 3vw;
+}
+
+.routes-link:hover {
+    color: black;
+
+}
+
+.routes-link:focus {
+    color: black;
+    text-decoration: underline;
+}
