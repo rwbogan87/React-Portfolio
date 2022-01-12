@@ -12,10 +12,18 @@ import { Tooltip } from 'reactstrap';
 const ProjectString = 'Projects'
 
 function ProjectComponent() {
-  const [toolTipOpen, setToolTipOpen] = useState(false);
+  const [goldOpen, setGoldOpen] = useState(false);
+  const [blueOpen, setBlueOpen] = useState(false);
+  const [redOpen, setRedOpen] = useState(false);
 
-  const toggleToolTip = () => {
-    setToolTipOpen(!toolTipOpen)
+  const toggleGoldTip = () => {
+    setGoldOpen(!goldOpen)
+  }
+  const toggleBlueTip = () => {
+    setBlueOpen(!blueOpen)
+  }
+  const toggleRedTip = () => {
+    setRedOpen(!redOpen)
   }
 
   return (
@@ -28,22 +36,54 @@ function ProjectComponent() {
           <p>Gold Badge</p>
           <FontAwesomeIcon
             icon={faInfoCircle}
-            id="toolTip"
-            // onMouseEnter={() => setToolTipOpen(true)}
-            // onMouseLeave={() => setToolTipOpen(false)}
+            id="goldTip"
+            className="faIcon"
+          // onMouseEnter={() => setToolTipOpen(true)}
+          // onMouseLeave={() => setToolTipOpen(false)}
           />
-          <Tooltip placement="right" isOpen={toolTipOpen} target="toolTip" toggle={toggleToolTip}>
-            Nicely done
+          <Tooltip placement="right" isOpen={goldOpen} target="goldTip" toggle={toggleGoldTip}>
+            <p className="tipText">Fundamental badge focused on HTML, CSS, core JS and basic API manipulation.</p>
           </Tooltip>
         </div>
-        <img src={goldBadge}></img>
-        
+        <div className="badgeProjectShieldDiv">
+        <img src={goldBadge} className="bigShield"></img>
+        <img src={goldBadge} className="smallShield"></img>
+        <img src={goldBadge} className="smallShield"></img>
+        </div>
       </div>
+
       <div className="badgeDiv">
-        <img src={blueBadge}></img>
+        <div className="badgeTitleDiv">
+          <p>Blue Badge</p>
+          <FontAwesomeIcon
+            icon={faInfoCircle}
+            id="blueTip"
+            className="faIcon"
+          // onMouseEnter={() => setToolTipOpen(true)}
+          // onMouseLeave={() => setToolTipOpen(false)}
+          />
+          <Tooltip placement="right" isOpen={blueOpen} target="blueTip" toggle={toggleBlueTip}>
+            <p className="tipText">React-based badge focused on full-stack deployment, use of postgreSQL, Sequelize, and full CRUD implementation.</p>
+          </Tooltip>
+        </div>
+        <img src={blueBadge} className="bigShield"></img>
       </div>
+
       <div className="badgeDiv">
-        <img src={redBadge}></img>
+        <div className="badgeTitleDiv">
+          <p>Red Badge</p>
+          <FontAwesomeIcon
+            icon={faInfoCircle}
+            id="redTip"
+            className="faIcon"
+          // onMouseEnter={() => setToolTipOpen(true)}
+          // onMouseLeave={() => setToolTipOpen(false)}
+          />
+          <Tooltip placement="right" isOpen={redOpen} target="redTip" toggle={toggleRedTip}>
+            <p className="tipText">Team-centered badge focused on adding typescript.  Full CRUD with database associations and admin priveleges/viewport *deprecated due to use of Multer for image handling*</p>
+          </Tooltip>
+        </div>
+        <img src={redBadge} className="bigShield"></img>
       </div>
     </div>
   );
