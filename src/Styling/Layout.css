@@ -29,7 +29,7 @@
 }
 
 #_headerText {
-    font-size: 8vw;
+    font-size: 4vw;
 
 }
 
@@ -38,10 +38,13 @@
     box-sizing: border-box;
 }
 
+p {
+}
+
 ._textFont {
     font-family: 'Lora', serif;
     box-sizing: content-box;
-    font-size: 4vw;
+    font-size: 2vw;
 }
 
 .AboutComponent {

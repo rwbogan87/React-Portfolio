@@ -1,6 +1,7 @@
 import '../../Styling/NavBar.css'
 import { Link } from 'react-router-dom'
-import { BreadcrumbItem } from 'reactstrap'
+// import { BreadcrumbItem } from 'reactstrap'
+//* not crazy about the divider
 
 function NavBar({routes}) {
     return (
@@ -8,7 +9,7 @@ function NavBar({routes}) {
         <nav className="routes-container">
           {routes.map((route) => {
             return (
-              <BreadcrumbItem tag={Link} to={route} key={route} className="routes-link">{route}</BreadcrumbItem>
+              <Link tag={Link} to={route} key={route} className="routes-link">{route}</Link>
             )
           })}
         </nav>
