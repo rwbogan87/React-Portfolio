@@ -18,11 +18,12 @@
 }
 
 .routes-link:hover {
-    color: black;
+    text-decoration: underline;
+    color: white;
 
 }
 
 .routes-link:focus {
-    color: black;
     text-decoration: underline;
+    border: 1px solid white;
 }
