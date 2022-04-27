@@ -7,10 +7,14 @@ function AboutComponent() {
     <div className="AboutComponent">
         <h1></h1>
         <p>
-          Currently working as a learning assistant, teaching others the incredible worlds of JS and React.
-          Teaching and problem solving have been core skills in my former career as a supply chain professional.  I love the collective mission of finding the right solutions to resolve the issue at hand, and finding the best ones usually require a creative, collaborative approach, and that's where my passion and motivation lie. 
-
-          Please feel free to reach out!
+          Ryan is a leader, a driven career changer with a clear vision, and an eager professional looking to continue adding to his code-stack experience and growing as a developer and team player.
+          <br/><br/>
+          He is currently working locally while searching for the right career fit and staying up to date with his stronger skills including JavaScript using React, the occasional Node.js backend work, and trying new or different styling techniques.
+          <br/><br/>
+          An IUPUI graduate from the Kelley School of Business with a degree in Supply Chain Management, Ryan has since found his calling and passion in being a leader in the software and IT world. He finds satisfaction in solving complex problems and finding creative solutions, something this path has provided and much more. 
+          <br/><br/>
+          For employment or contract interest, please feel free to send a message below or view the posted resume section for contact details. Thank you for stopping by!
+          <br/><br/>
         </p>
     </div>
   );

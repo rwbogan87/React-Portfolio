@@ -24,8 +24,8 @@
     color: black;
     flex-direction: column;
     text-shadow: 1px 1px 1px #524e42ff;
-    padding-top: 20px;
     background: rgba(200, 202, 204, 0.8);
+    width: 100vw;
 }
 
 #_headerText {
@@ -50,7 +50,7 @@ p {
 .AboutComponent {
     background: rgba(50, 54, 57, 0.8);
     margin-bottom: 20vh;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 10vh;
+    padding-left: 20vw;
+    padding-right: 20vw;
 }
