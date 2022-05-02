@@ -1,0 +1,8 @@
+#emailForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#message {
+    height: 30vh;
+}
