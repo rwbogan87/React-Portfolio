@@ -7,5 +7,5 @@ Please feel free to drop me an email message in the contact section, I am curren
 There is more to come, with updates soon to be listed in full moving forward.
 
 Most recent updates:
-5/3: Remove old badge display, add carousel
-next: refine carousel, add text and links
+5/3: Remove old badge display, add carousel;
+Next: refine carousel, add text and links
