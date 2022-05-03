@@ -23,4 +23,4 @@ function AboutComponent() {
   );
 }
 
-export { AboutComponent, AboutString }    ;
+export { AboutComponent, AboutString };

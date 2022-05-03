@@ -13,18 +13,21 @@ p {
 }
 .smallShield {
     width: 7vw;
-    height: 14vw;
     border: 2px solid transparent;
     margin-bottom: 5vh;
     margin-right: 5vw;
     box-sizing: border-box;
 }
 
+.smallShield:hover {
+    display: none;
+}
+
 .bigShield:hover {
     cursor: pointer;
     border: 2px solid white;
 }
-.ProjectComponent {
+/* .ProjectComponent {
     display: flex;
     flex-direction: column;
     background: rgba(50, 54, 57, 0.8);
@@ -32,6 +35,20 @@ p {
     padding-left: 20px;
     padding-top: 40px;
     padding-bottom: 20px;
+} */
+.carousel-item img:active {
+    height: 100px;
+    width: 50px !important;
+}
+
+.w-100 {
+    width: 50%!important;
+    left: auto;
+    right: auto;
+}
+
+.d-block {
+    display: inline!important;
 }
 
 .badgeDiv {
@@ -39,7 +56,7 @@ p {
     flex-direction: column;
 }
 
-.badgeTitleDiv {
+/* .badgeTitleDiv {
     justify-content: center;
     display: flex;
     flex-direction: row;
@@ -49,7 +66,7 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+} */
 
 p {
     font-size: 2vw;
