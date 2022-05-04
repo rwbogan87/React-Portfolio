@@ -2,7 +2,6 @@ import '../../Styling/Footer.css'
 import { useState } from 'react';
 import ContactForm from '../ContactForm'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import { useForm, ValidationError } from '@formspree/react';
 
 function Footer() {
   const [modal, setModal] = useState(false);
@@ -24,9 +23,9 @@ function Footer() {
       </Modal>
       <div className="container-right">
         {/* add clickable email link modal */}
-          <a onClick={toggle}>
+          <p className="footerText" onClick={toggle}>
             Contact
-          </a>
+          </p>
       </div>
     </div>
   );

@@ -14,24 +14,23 @@ function ResumeComponent() {
     console.log('displayMe() ran')
     setModalState(!modalState)
   }
-
-  const modalHandler = () => {
-    if (modalState == true && modal !== null) {
-      modal.style.display = 'block'
-    } else if (modal !== null) {
-      modal.style.display = 'none'
-    } else {
-      return null
-    }
-  }
-
+  
   useEffect(()=> {
     console.log('useEffect ran')
+    const modalHandler = () => {
+      if (modalState === true && modal !== null) {
+        modal.style.display = 'block'
+      } else if (modal !== null) {
+        modal.style.display = 'none'
+      } else {
+        return null
+      }
+    }
     modalHandler()
   },[modalState])
 
   window.onclick = function (event) {
-    if (event.target == modal) {
+    if (event.target === modal) {
       modal.style.display = 'none';
     }
   }
@@ -43,7 +42,7 @@ function ResumeComponent() {
       <div id="pdfModal" style={{
         display: 'none',
       }}>
-        <iframe src={pdfResume} className="pdf">resume</iframe>
+        <iframe title='RyanBogan Resume' src={pdfResume} className="pdf">resume</iframe>
         <br/>
         <Button outline color="warning" id="_closeButton" onClick={displayMe}>Close</Button>
       </div>

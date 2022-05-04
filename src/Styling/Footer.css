@@ -10,8 +10,12 @@
     flex-direction: row;
 }
 
-.Footer:hover {
+.footerText:hover {
     cursor: pointer;
+}
+
+.footerText {
+    font-size: 20px;
 }
 
 Button {

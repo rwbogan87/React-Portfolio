@@ -37,12 +37,12 @@ p {
     padding-bottom: 20px;
 } */
 .carousel-item img:active {
-    height: 100px;
+    height: 50px !important;
     width: 50px !important;
 }
 
 .w-100 {
-    width: 50%!important;
+    width: 25%!important;
     left: auto;
     right: auto;
 }
